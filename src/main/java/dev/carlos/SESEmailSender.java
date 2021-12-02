@@ -41,7 +41,7 @@ public class SESEmailSender {
     }
   }
 
-  public String prepareBody(String arg1, String arg2, String html){
+  public static String prepareBody(String arg1, String arg2, String html){
     html = html.replace("<NAME>", arg1);
     html = html.replace("<MESSAGE>", arg2);
     return html;
